@@ -7,9 +7,9 @@ import TweetService from './service/tweet';
 import { BrowserRouter } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
 import { AuthErrorEventBus } from './context/AuthContext';
-import HttpClient from './network/http';
-import TokenStorage from './db/token';
-import Socket from './network/socket';
+import HttpClient from './network/http.js';
+import TokenStorage from './db/token.js';
+import Socket from './network/socket.js';
 
 const baseURL = process.env.REACT_APP_BASE_URL;
 const tokenStorage = new TokenStorage();
