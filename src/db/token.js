@@ -8,6 +8,6 @@ export default class TokenStorage {
     return localStorage.getItem(TOKEN);
   }
   clearToken() {
-    return localStorage.clear(TOKEN);
+    localStorage.clear(TOKEN);
   }
 }
